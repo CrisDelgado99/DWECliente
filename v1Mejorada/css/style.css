@@ -1,0 +1,51 @@
+body, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p, a{
+    font-size: 15pt;
+}
+
+th{
+    font-size: 20pt;
+}
+
+input[type="button"]{
+    font-size: 14pt;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(211, 231, 248);
+    
+}
+
+body, input{
+    color: rgb(48, 106, 153);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 80%;
+    
+}
+
+table th, table td{
+    border: 2.5px rgba(99, 157, 204, 1) solid;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 20px;
+}
+table th{
+    background-color: rgba(99, 157, 204, 0.4);
+    
+}
+
+#divResultado div{
+    margin: 10px;
+    border: 2.5px rgba(99, 157, 204, 1) solid;
+    padding: 10px;
+    background-color: rgba(99, 157, 204, 0.2) ;
+}
