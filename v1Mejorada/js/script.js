@@ -1,10 +1,10 @@
 'use strict'
 
-//Elementos de la página____________________________________________________________________________________________
+//VARIABLES DOM____________________________________________________________________________________________
 const divBotones = document.querySelector('#divBotones');
 const divResultado = document.querySelector('#divResultado');
 
-//AddEventListener___________________________________________________________________________________________________
+//ADDEVENTLISTENER___________________________________________________________________________________________________
 
 divBotones.addEventListener('click', e =>{
 let elemento = e.target;
@@ -30,7 +30,8 @@ switch(idElemento){
 }
 });
 
-//Funciones__________________________________________________________________________________________________________
+//FUNCIONES__________________________________________________________________________________________________________
+//ObtenerDesdeTxt()---------------------------------------------------------------
 function obtenerDesdeTxt(){
     const linkTxt = './apis/datos.txt';
 
@@ -46,6 +47,7 @@ function obtenerDesdeTxt(){
         .catch(console.log('No se ha obtenido el archivo txt.'));
 }
 
+//CargarJson()-----------------------------------------------------------------
 function cargarJson(link){
     fetch(link)
         .then(res => res.json())
@@ -59,13 +61,13 @@ function cargarJson(link){
             });
 
 }
-
+//impArray()------------------------------------------------------------------------
 function impArray(data){
     data.forEach(objeto => {
         impObjeto(objeto);
     });
 }
-
+//impObjeto()--------------------------------------------------------------------------
 function impObjeto(data){
     let nuevoElemento;
     let mensaje;
